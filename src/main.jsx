@@ -225,20 +225,19 @@ function About() {
   return (
     <section id="sobre" className="section about">
       <div className="aboutPhoto">
-        <img src="/assets/prof-marcio-aguiar.jpg" alt="Prof. Márcio Aguiar" />
+        <img src="/assets/marcio.png" alt="Marcio Schoenfelder" />
       </div>
       <div className="aboutText">
         <span className="eyebrow">Quem está por trás da JavaTech?</span>
-        <h2>Prof. Márcio Aguiar</h2>
+        <h2>Marcio Schoenfelder</h2>
         <p>
-          Professor universitário, desenvolvedor Full Stack e consultor em tecnologia, atuando na criação de soluções digitais, desenvolvimento de software, sistemas corporativos e formação de profissionais da área de tecnologia.
+          Desenvolvedor Full Stack. Professor de TI e Especialista em TI na Gestão de Negócios.
         </p>
         <p>
-          Com experiência em ensino superior, projetos empresariais e desenvolvimento web, a JavaTech nasceu para unir conhecimento técnico, inovação, usabilidade e resultado.
-        </p>
+          Com larga experiência em desenvolvimento de sistemas e ensin, a JavaTech nasceu para unir conhecimento técnico, inovação, usabilidade e resultado.        </p>
         <div className="authorityGrid">
-          <span><GraduationCap size={18} /> Professor Universitário</span>
           <span><MonitorSmartphone size={18} /> Desenvolvedor Full Stack</span>
+          <span><GraduationCap size={18} /> Professor de TI</span>          
           <span><Database size={18} /> Banco de Dados</span>
           <span><Cpu size={18} /> Soluções Web</span>
           <span><Boxes size={18} /> Docker</span>
