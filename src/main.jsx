@@ -225,7 +225,7 @@ function About() {
   return (
     <section id="sobre" className="section about">
       <div className="aboutPhoto">
-        <img src="/assets/marcio.png" alt="Marcio Schoenfelder" />
+        <img src="/assets/prof-marcio-schoenfelder.png" alt="Marcio Schoenfelder" />
       </div>
       <div className="aboutText">
         <span className="eyebrow">Quem está por trás da JavaTech?</span>
