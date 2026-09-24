@@ -4,20 +4,16 @@ import {
   ArrowRight,
   BadgeCheck,
   BookOpen,
-  Boxes,
   Code2,
   Database,
   GraduationCap,
-  Layers3,
   MessageCircle,
-  MonitorSmartphone,
   Rocket,
   ShieldCheck,
   Sparkles,
   Workflow,
   Container,
   Globe2,
-  Cpu,
   ServerCog
 } from 'lucide-react'
 import './styles.css'
@@ -71,7 +67,6 @@ function protectPage() {
   }
 }
 
-
 function LogoIntro() {
   const [show, setShow] = useState(true)
 
@@ -105,7 +100,6 @@ function Header() {
         <a href="#servicos">Serviços</a>
         <a href="#portfolio">Portfólio</a>
         <a href="#mentorias">Mentorias</a>
-        <a href="#sobre">Sobre</a>
       </nav>
       <a className="navCta" href={whatsapp} target="_blank" rel="noreferrer">Solicitar orçamento</a>
     </header>
@@ -221,33 +215,6 @@ function Mentorships() {
   )
 }
 
-function About() {
-  return (
-    <section id="sobre" className="section about">
-      <div className="aboutPhoto">
-        <img src="/assets/prof-marcio-schoenfelder.png" alt="Marcio Schoenfelder" />
-      </div>
-      <div className="aboutText">
-        <span className="eyebrow">Quem está por trás da JavaTech?</span>
-        <h2>Marcio Schoenfelder</h2>
-        <p>
-          Desenvolvedor Full Stack. Professor de TI e Especialista em TI na Gestão de Negócios.
-        </p>
-        <p>
-          Com larga experiência em desenvolvimento de sistemas e ensin, a JavaTech nasceu para unir conhecimento técnico, inovação, usabilidade e resultado.        </p>
-        <div className="authorityGrid">
-          <span><MonitorSmartphone size={18} /> Desenvolvedor Full Stack</span>
-          <span><GraduationCap size={18} /> Professor de TI</span>          
-          <span><Database size={18} /> Banco de Dados</span>
-          <span><Cpu size={18} /> Soluções Web</span>
-          <span><Boxes size={18} /> Docker</span>
-          <span><Layers3 size={18} /> Sistemas Corporativos</span>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function Differentials() {
   const data = [
     ['Atendimento direto', 'Você fala com quem entende o projeto, planeja a solução e executa a entrega.'],
@@ -302,7 +269,6 @@ function App() {
         <Services />
         <Portfolio />
         <Mentorships />
-        <About />
         <Differentials />
         <FinalCta />
       </main>
