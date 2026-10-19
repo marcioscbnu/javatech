@@ -18,7 +18,7 @@ import {
 } from 'lucide-react'
 import './styles.css'
 
-const whatsapp = 'https://wa.me/5547989211346?text=Olá,%20seja%20bem-vindo!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20JavaTech?'
+const whatsapp = 'https://wa.me/5547989211346?text=Olá,%20seja%20bem-vindo!%20Gostaria%20de%20solicitar%20um%20orçamento%20?'
 
 const services = [
   { icon: Rocket, title: 'Landing Pages', text: 'Páginas estratégicas, responsivas e orientadas à conversão para captar clientes, gerar contatos e apresentar ofertas com impacto.' },
