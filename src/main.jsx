@@ -39,14 +39,14 @@ const mentorships = [
 ]
 
 const portfolio = [
-  { title: 'Pequenos Negócios', category: 'Modelo 1', url: 'https://pequenosnegocios.javatech.dev.br', description: 'Página comercial para empresas locais que desejam apresentar serviços, gerar contatos e fortalecer a presença digital.', tags: ['Negócios locais', 'WhatsApp', 'Conversão'] },
-  { title: 'Educação', category: 'Modelo 2', url: 'https://educacao.javatech.dev.br', description: 'Modelo para cursos, professores, mentorias, treinamentos e instituições que precisam divulgar formações e captar alunos.', tags: ['Cursos', 'Mentorias', 'Captação'] },
-  { title: 'Clínicas', category: 'Modelo 3', url: 'https://clinicas.javatech.dev.br', description: 'Website para clínicas e consultórios com foco em credibilidade, serviços, localização e agendamento de atendimento.', tags: ['Saúde', 'Agenda', 'Credibilidade'] },
-  { title: 'Academias', category: 'Modelo 4', url: 'https://academias.javatech.dev.br', description: 'Landing page dinâmica para academias, studios, personal trainers e espaços de treinamento físico.', tags: ['Fitness', 'Planos', 'Matrículas'] },
-  { title: 'Restaurantes', category: 'Modelo 5', url: 'https://restaurantes.javatech.dev.br', description: 'Página elegante para restaurantes, cafeterias, delivery e negócios gastronômicos apresentarem cardápio e reservas.', tags: ['Gastronomia', 'Cardápio', 'Reservas'] },
-  { title: 'Profissionais Liberais', category: 'Modelo 6', url: 'https://profissionaisliberais.javatech.dev.br', description: 'Modelo para advogados, consultores, corretores, terapeutas e especialistas que vendem serviços de confiança.', tags: ['Serviços', 'Autoridade', 'Contato'] },
-  { title: 'Clubes', category: 'Modelo 7', url: 'https://clubes.javatech.dev.br', description: 'Website para clubes, associações esportivas e espaços sociais divulgarem estrutura, eventos e benefícios.', tags: ['Eventos', 'Sócios', 'Institucional'] },
-  { title: 'Entidades de Classe', category: 'Modelo 8', url: 'https://entidadesdeclasse.javatech.dev.br', description: 'Página institucional para sindicatos, conselhos, associações e entidades representativas comunicarem valor e serviços.', tags: ['Institucional', 'Associados', 'Gestão'] }
+  { title: 'Pequenos Negócios', category: 'Modelo 1', url: 'https://pequenosnegocios.javatech.dev.br', image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85', description: 'Página comercial para empresas locais que desejam apresentar serviços, gerar contatos e fortalecer a presença digital.', tags: ['Negócios locais', 'WhatsApp', 'Conversão'] },
+  { title: 'Educação', category: 'Modelo 2', url: 'https://educacao.javatech.dev.br', image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85', description: 'Modelo para cursos, professores, mentorias, treinamentos e instituições que precisam divulgar formações e captar alunos.', tags: ['Cursos', 'Mentorias', 'Captação'] },
+  { title: 'Clínicas', category: 'Modelo 3', url: 'https://clinicas.javatech.dev.br', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85', description: 'Website para clínicas e consultórios com foco em credibilidade, serviços, localização e agendamento de atendimento.', tags: ['Saúde', 'Agenda', 'Credibilidade'] },
+  { title: 'Academias', category: 'Modelo 4', url: 'https://academias.javatech.dev.br', image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85', description: 'Landing page dinâmica para academias, studios, personal trainers e espaços de treinamento físico.', tags: ['Fitness', 'Planos', 'Matrículas'] },
+  { title: 'Restaurantes', category: 'Modelo 5', url: 'https://restaurantes.javatech.dev.br', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85', description: 'Página elegante para restaurantes, cafeterias, delivery e negócios gastronômicos apresentarem cardápio e reservas.', tags: ['Gastronomia', 'Cardápio', 'Reservas'] },
+  { title: 'Profissionais Liberais', category: 'Modelo 6', url: 'https://profissionaisliberais.javatech.dev.br', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85', description: 'Modelo para advogados, consultores, corretores, terapeutas e especialistas que vendem serviços de confiança.', tags: ['Serviços', 'Autoridade', 'Contato'] },
+  { title: 'Clubes', category: 'Modelo 7', url: 'https://clubes.javatech.dev.br', image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=85', description: 'Website para clubes, associações esportivas e espaços sociais divulgarem estrutura, eventos e benefícios.', tags: ['Eventos', 'Sócios', 'Institucional'] },
+  { title: 'Entidades de Classe', category: 'Modelo 8', url: 'https://entidadesdeclasse.javatech.dev.br', image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=85', description: 'Página institucional para sindicatos, conselhos, associações e entidades representativas comunicarem valor e serviços.', tags: ['Institucional', 'Associados', 'Gestão'] }
 ]
 
 function protectPage() {
@@ -178,7 +178,7 @@ function Portfolio() {
         {portfolio.map((item, index) => (
           <article className="portfolioCard" key={item.title}>
             <div className="portfolioVisual">
-              <img src="/assets/marca-dagua-javatech.png" alt="JavaTech" />
+              <img src={item.image} alt={`Imagem de ${item.title}`} loading="lazy" />
               <span>0{index + 1}</span>
             </div>
             <div className="portfolioBody">
